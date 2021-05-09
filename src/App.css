@@ -1,3 +1,33 @@
-.App {
-  text-align: center
+.App{
+	background-color: #1E2F89;
+	color: #F3B0B0;
+	height: 100vh;
+	padding-left: 3em;
+	padding-right: 3em;
+}
+.App h1{
+	text-align: center;
+}
+.song-list{
+margin: 0;
+margin-top: 1em;
+list-style-type: none;
+text-align: left;
+}
+.song-list > li{
+	/*padding-bottom: 0.5em;
+	padding-top: 0.25em;*/
+	padding: 0.25em 1em;
+	background-color: #1C58C1;
+	transition: padding 1.5s;
+}
+.song-list > li:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.song-list > li:nth-child(even){
+	background-color: #4122B3;
+}
+.song-list > li.selected{
+	padding-left: 2em;
 }
